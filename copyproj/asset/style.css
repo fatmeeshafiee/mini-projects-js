@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Noto Sans Arabic',sans-serif ;
+}
+::selection{
+   background: #2782ac;
+}
+body{
+    background: #03A9F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10rem;
+}
+.container :where(textarea,button){
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+.container textarea{
+    border: 1px solid #999;
+}
+.container button{
+    background: #B3E5FC;
+    cursor: pointer;
+    transition: all 1s;
+}

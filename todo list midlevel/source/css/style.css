@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(93.1deg, rgb(238, 254, 183) 19.1%, rgb(169, 254, 222) 53.9%, rgb(90, 222, 255) 92%);  
+  font-family: cursive;
+
+}
+  .container {
+    max-width: 400px;
+    margin-top: 90px;
+  }
+
+  input[type="text"],
+  input[type="text"]:focus {
+    color: #000000;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+  }
+  .todos li {
+    background: linear-gradient(91.1deg, rgb(57, 31, 105) -2.3%, rgb(115, 43, 155) 44.4%, rgb(231, 75, 184) 103.4%);
+  }
+  .delete {
+    cursor: pointer;
+  }
+  

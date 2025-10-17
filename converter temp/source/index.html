@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Converter Celsius to Fahrenheit" />
+    <meta name="keywords" content="converter, calculator, celsius, fahrenheit" />
+    <meta name="author" content="SabzLearn.ir" />
+    <title>converter project</title>
+
+    <link href="style/style.css" rel="stylesheet">
+
+    <link rel="preconcert" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/thermometer.png" type="image/png">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="parrentDiv">
+        <!-- first part -->
+        <div class="fat">
+            <span class="convertSpan">Convert</span>
+            <select class="selection" id="firstSelect">
+                <option value="celsius">Celsius (°C) </option>
+                <option value="fahrenheit">Fahrenheit (°F) </option>
+                <option value="kelvin">Kelvin (°K) </option>
+            </select>
+            <span class="convertSpan">To</span>
+            <select class="selection" id="secondSelect">
+                <option value="celsius">Celsius (°C) </option>
+                <option value="fahrenheit">Fahrenheit (°F) </option>
+                <option value="kelvin">Kelvin (°K) </option>
+            </select>
+        </div>
+        <!-- second part -->
+        <div>
+            <input type="text" id="converter" placeholder="enter">
+        </div>
+        <!-- 3th part -->
+        <p class="result" id="result"></p>
+        <!-- 4th part -->
+        <div id="buttons">
+            <button class="convertButton" id="convertButton">Convert</button>
+            <button class="resetButton" id="resetButton">Reset</button>
+        </div>
+    </div>
+</body>
+</html>

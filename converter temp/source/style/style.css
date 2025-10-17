@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-family: "Roboto", sans-serif;
+  --color: rgb(43, 68, 180);
+  --color2: rgb(157, 239, 241);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-image: url("../img/closeup-shot-thermometer-beach-sand.jpg");  
+  background-size: cover;
+  background-position: center;
+  font-size: 20px;
+}
+.fat {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+div#buttons {
+  flex-wrap: wrap;
+}
+label {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+input {
+  margin: 50px 0 10px;
+  padding: 7px;
+  font-size: 20px;
+}
+.result {
+  margin: 10px 0 50px;
+  font-size: 26px;
+  color: rgb(255, 255, 102);
+  letter-spacing: 1px;
+  height: 1em;
+  font-weight: bold;
+}
+
+button {
+  width: 200px;
+  margin: 0 30px;
+  padding: 10px 30px;
+  background: rgb(218, 21, 218);
+  border: 2px solid var(--color);
+  border-radius: 5px;
+  color: var(--color2);
+  font-size: 25px;
+  transition: color 0.3s, box-shadow 0.3s;
+  box-shadow: 3px 3px 10px var(--color);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  box-shadow: 3px 3px 10px var(--color2);
+  background: rgb(183, 7, 183);
+  transition: all 500ms;
+
+}
+
+/* ------> Media queries <------ */
+@media screen and (max-width: 500px){ /*Smartphones*/
+  label{
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1000px) {/*Bigger screens*/
+  button {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+.selection{
+  outline: none;
+  border: none;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background-color: rgb(249, 196, 249);
+  border-radius: 10px;
+
+}
+
+
+.convertSpan{
+  font-size: 40px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+  margin-left: 10px;
+  position: relative;
+  top: 5px;
+}
+
+
+
+.parrentDiv{
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 650px;
+  margin: 1em;
+  background-image: linear-gradient(to bottom, #7028e48b 0%, #e5b2caa1 100%);
+  text-align: center;
+}
+
+
+#buttons{
+  display: flex;
+}
+
+
+#converter{
+  border: none;
+  outline: none;
+  background-color: rgb(249, 196, 249);
+  border-radius: 8px;
+}
+
+
+@media  (max-width: 600px) {
+  .fat {
+    display: inline-flex
+;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+}
